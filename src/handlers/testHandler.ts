@@ -1,5 +1,6 @@
 import {Request, Response} from "express";
 
 export const testHandler = (req: Request, res: Response) => {
-    res.status(200).send("*Hello* you @Konrad :thumbsup:")
+    console.log(req.body);
+    res.status(200).json({"text": "*Hello* you <@Konrad> :thumbsup:"})
 };
