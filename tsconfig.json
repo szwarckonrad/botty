@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "outDir": "dist/",
+    "lib": ["es2015"]
+  },
+  "files": [
+    "src/index.ts"
+  ]
+}
