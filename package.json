@@ -4,8 +4,8 @@
   "description": "Slack Bot",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "start:dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "start": "tsc && node dist/index.js",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
     "test": "jest"
   },
   "author": "",
