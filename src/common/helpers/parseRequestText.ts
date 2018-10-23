@@ -1,1 +1,0 @@
-export const parseRequestText = (requestText: string): string[] => requestText.split(" ");
