@@ -13,7 +13,7 @@ export const deployHandler = (req: Request, res: Response) => {
     }
 
     const requestTextArray = parseRequestTextToArray((req.body as ISlackRequest).text);
-    const response = createDeployResponse(requestTextArray);
+    const response = createDeployResponse(requestTextArray, (req.body as ISlackRequest).user_id);
 
     return res.status(200).send(response);
 };
