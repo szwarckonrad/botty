@@ -1,12 +1,15 @@
 import {Request, Response} from "express";
+
 import {ISlackRequest} from "../common/interfaces/ISlackRequest";
 import {parseRequestTextToArray} from "../common/helpers/parseRequestTextToArray";
 import {createDeployResponse} from "../common/helpers/createDeployResponse";
+import {manual} from "../common/constants/manual";
+
 
 export const deployHandler = (req: Request, res: Response) => {
-    console.log(req.body);
     if (!(req.body as ISlackRequest).text) {
-        return res.status(404).send({error: "Doesn't seem like a valid query."});
+        // No /deploy params were passed, return all possible options.
+        return res.status(200).send(manual);
     }
 
     const requestTextArray = parseRequestTextToArray((req.body as ISlackRequest).text);
