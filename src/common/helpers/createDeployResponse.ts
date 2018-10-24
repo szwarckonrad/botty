@@ -1,5 +1,5 @@
-import {notEnoughOptionsProvided, unknownOptionResponse} from "../constants/errors";
 import {deployResponseText} from "../constants/deployResponse";
+import {notEnoughOptionsProvided, unknownOptionResponse} from "../constants/errors";
 
 
 export interface IDeployResponseData {

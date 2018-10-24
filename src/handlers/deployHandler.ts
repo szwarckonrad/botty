@@ -1,9 +1,9 @@
 import {Request, Response} from "express";
 
-import {ISlackRequest} from "../common/interfaces/ISlackRequest";
-import {parseRequestTextToArray} from "../common/helpers/parseRequestTextToArray";
-import {createDeployResponse} from "../common/helpers/createDeployResponse";
 import {manual} from "../common/constants/manual";
+import {createDeployResponse} from "../common/helpers/createDeployResponse";
+import {parseRequestTextToArray} from "../common/helpers/parseRequestTextToArray";
+import {ISlackRequest} from "../common/interfaces/ISlackRequest";
 
 
 export const deployHandler = (req: Request, res: Response) => {
