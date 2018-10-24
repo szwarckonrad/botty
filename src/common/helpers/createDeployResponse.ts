@@ -16,7 +16,7 @@ enum Project {
 }
 
 enum Stage {
-    DEV = "dev",
+    DEV = "staging",
     PRODUCTION = "production"
 }
 

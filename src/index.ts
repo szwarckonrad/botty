@@ -1,8 +1,8 @@
+import * as bodyParser from "body-parser";
 import * as express from "express";
-import  * as bodyParser from "body-parser";
 
-import echoRouter from "./routes/echoRoutes";
 import deployRouter from "./routes/deployRoutes";
+import echoRouter from "./routes/echoRoutes";
 
 
 const app = express();

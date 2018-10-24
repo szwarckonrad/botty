@@ -5,6 +5,6 @@ import {deployHandler} from "../handlers/deployHandler";
 const deployRouter = express.Router();
 
 deployRouter
-    .post('/', deployHandler);
+    .post("/", deployHandler);
 
 export default deployRouter;
