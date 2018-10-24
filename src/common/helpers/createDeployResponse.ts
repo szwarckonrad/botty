@@ -4,10 +4,10 @@ import {deployResponseText} from "../constants/deployResponse";
 
 export interface IDeployResponseData {
     user?: string;
-    state?: "start" | "finish";
-    project?: string;
+    state?: State;
+    project?: Project;
     branch?: string;
-    stage?: string;
+    stage?: Stage;
 }
 
 enum Project {
@@ -63,10 +63,10 @@ export const createDeployResponse = (requestArray: string[], user: string) => {
 
     switch (state) {
         case State.START:
-            responseData.stage = State.START;
+            responseData.state = State.START;
             break;
         case State.STOP:
-            responseData.stage = State.STOP;
+            responseData.state = State.STOP;
             break;
         default:
             return unknownOptionResponse(state);
