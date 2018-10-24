@@ -2,7 +2,7 @@ export const manual = "Usage: `/deploy PROJECT STAGE BRANCH START|FINISH` => `/d
     "Accepted params:\n" +
     "*PROJECT*\n" +
     "> 1. *rpm* for `js-rpm` repo\n" +
-    "> 2. *python* for `pg-python repo`\n" +
+    "> 2. *python* for `pg-python` repo\n" +
     "*STAGE*\n" +
     "> 1. *staging*\n" +
     "> 2. *production*\n" +
